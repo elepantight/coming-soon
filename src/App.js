@@ -1,18 +1,36 @@
-import "./scss/styles.scss";
+import React from 'react';
+import emailjs from 'emailjs-com'
 
-function App() {
+
+import "./scss/styles.scss";
+export default function ContactUs() {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_5n8oapd",
+        e.target,
+        "user_nzRUlAOVwi3RNtg0sXepQ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
   return (
     <>
       <div className="text-header">
         <section className="icon-list">
           <div>
-            <a
-              href="https://www.instagram.com/wavyoven/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="instagram"
-            >
-            </a>
+
           </div>
         </section>
       </div>
@@ -31,22 +49,22 @@ function App() {
               </p>
             </div>
           </section>
-
-          <div className="input-field">
-            <input
-              type="text"
-              name="name"
-              className="input"
-              placeholder="E-mail"
-            />
-            <button type="button" className="btn">
-              Submit
-            </button>
-          </div>
+  
         </div>
       </div>
+      <div className="subscription-form" onSubmit={sendEmail}>
+          <div className="input-container">
+            <input
+              type="email"
+              name="email"
+              className="input"
+              placeholder="Email"
+            />
+              <button type="submit" className="btn">
+                Submit
+              </button>
+            </div>
+          </div>
     </>
   );
 }
-
-export default App;
