@@ -4,47 +4,44 @@ function App() {
   return (
     <>
       <div className="text-header">
-        
-      <section className="icon-list">
-              <div>
-                <a
-                  href="https://www.instagram.com/wavyoven/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="instagram"
-                >
-                <i className="nes-icon instagram is-large"></i></a>
-              </div>
-              </section>
+        <section className="icon-list">
+          <div>
+            <a
+              href="https://www.instagram.com/wavyoven/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="instagram"
+            >
+            </a>
+          </div>
+        </section>
       </div>
       <div className="container">
         <div className="row">
-          <section className="message -left">
-            <div className="nes-balloon from-left">
+          <section className="container-box-1">
+            <div className="box1">
               <p>Welcome to Metanoia</p>
             </div>
           </section>
-          <section className="message -right">
-            <div className="nes-balloon from-right">
+          <section className="container-box-2">
+            <div className="">
               <p>
-                We're currently working on creating our new website.
-                <br></br>
-                We'll be launching soon, subscribe to be notified{" "}
+                We're currently working on creating <br></br>our new website.
+                We'll be launching soon<br></br> subscribe to be notified{" "}
               </p>
             </div>
           </section>
 
-          <div className="nes-field">
+          <div className="input-field">
             <input
               type="text"
               name="name"
-              className="nes-input"
+              className="input"
               placeholder="E-mail"
             />
-            <button type="button" className="nes-btn is-success">
+            <button type="button" className="btn">
               Submit
             </button>
-
           </div>
         </div>
       </div>

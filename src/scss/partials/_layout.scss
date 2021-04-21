@@ -29,23 +29,48 @@ body {
   font-family: "Press Start 2P", cursive;
 }
 
-.message.-left {
+.container-box-1 {
+  width: 800px;
+  height: 30px;
+  background-color: white;
   position: relative;
-  top: -150px;
+  top: -250px;
+  -webkit-box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff,
+    15px 15px 0px 0px #a1d8ff, 20px 20px 0px 0px #cae6ff,
+    25px 25px 0px 0px #e1eeff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff,
+    15px 15px 0px 0px #a1d8ff, 20px 20px 0px 0px #cae6ff,
+    25px 25px 0px 0px #e1eeff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
-
-.message.-right {
+.container-box-2 {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4b4c4b,
+    0px 0px 0px 24px #828482, 0px 0px 0px 31px #b2b5b2, 0px 0px 0px 39px #daddda,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4b4c4b,
+    0px 0px 0px 24px #828482, 0px 0px 0px 31px #b2b5b2, 0px 0px 0px 39px #daddda,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
   position: relative;
   top: -100px;
-  left: 100px;
+  left: 80px;
 }
-.nes-field {
+p {
+  font-size: 1.5em;
+  margin: 15px;
+}
+.input-field {
   margin: 40px;
 
-  .nes-input {
+  .input {
     justify-content: space-between;
     margin: 15px;
     font-family: "Press Start 2P", cursive;
+    -webkit-box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+      -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+      5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+      -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+      5px 5px 15px 5px rgba(0, 0, 0, 0);
   }
 }
 
@@ -54,11 +79,10 @@ body {
   margin: 40px;
 }
 
-
-.icon-list{
-    margin-top: 50px;
-    margin-left: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.icon-list {
+  margin-top: 50px;
+  margin-left: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
