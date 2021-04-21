@@ -65,6 +65,26 @@ export default function ContactUs() {
               </button>
             </div>
           </div>
+          <div class="fire">
+   <div class="flames">
+      <div class="flame"></div>
+      <div class="flame"></div>
+      <div class="flame"></div>
+      <div class="flame"></div>
+   </div>
+   
+   
+</div>
+<div class="fire">
+   <div class="flames">
+      <div class="flame"></div>
+      <div class="flame"></div>
+      <div class="flame"></div>
+      <div class="flame"></div>
+   </div>
+   
+   
+</div>
     </>
   );
 }
