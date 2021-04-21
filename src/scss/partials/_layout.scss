@@ -1,0 +1,64 @@
+body {
+  cursor: default;
+  background: linear-gradient(
+    90deg,
+    #87ceeb 0%,
+    #87ebd6 30%,
+    #e0e722 67%,
+    #cfff04 100%
+  );
+  background-size: 1000%;
+  animation: background 20s linear alternate infinite;
+}
+
+@keyframes background {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+.container {
+  margin-top: 150px;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+.message.-left {
+  position: relative;
+  top: -150px;
+}
+
+.message.-right {
+  position: relative;
+  top: -100px;
+  left: 100px;
+}
+.nes-field {
+  margin: 40px;
+
+  .nes-input {
+    justify-content: space-between;
+    margin: 15px;
+    font-family: "Press Start 2P", cursive;
+  }
+}
+
+.nes-btn {
+  float: right;
+  margin: 40px;
+}
+
+
+.icon-list{
+    margin-top: 50px;
+    margin-left: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
