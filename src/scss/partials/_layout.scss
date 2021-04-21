@@ -76,10 +76,14 @@ p {
   font-size: 1.5em;
   margin: 15px;
 }
-.input-field {
-  margin: 40px;
+.input-container {
+  position: relative;
+  margin-left: 200px;
+  top: -250px;
+
 
   input {
+      
     height: 50px;
     margin: 15px;
     font-family: "Press Start 2P", cursive;
@@ -95,8 +99,9 @@ p {
 }
 
 button {
-  float: right;
   position: relative;
+  left: 0;
+  top: -10px;
   display: inline-block;
   cursor: pointer;
   outline: none;
