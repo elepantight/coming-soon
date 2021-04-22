@@ -82,9 +82,23 @@ button {
   }
 }
 
-@media only screen and (max-width: 375px) {
-  input {
+@media only screen and (max-width: 480px) {
+  .input-container {
     position: relative;
-    left: 0;
+    left: -250px;
+    top: 100px;
+    input{
+      width: 300px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  button {
+    position: relative;
+    left: 150px;
+    top: 70px;
+  
   }
 }
