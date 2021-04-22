@@ -2,6 +2,13 @@ $l-border: #c0c0c0;
 $t-border: #808080;
 $r-border: #c0c0c0;
 $b-border: #d3d3d3;
+$text: #382b22;
+$light-pink: #c9e9f6;
+$pink: #87ceeb;
+$dark-pink: #45b3e0;
+$pink-border: #1f1f1f;
+$pink-shadow: #5bbce4;
+
 
 .input-container {
   position: relative;
@@ -9,23 +16,20 @@ $b-border: #d3d3d3;
   top: -250px;
 
   input {
-    height: 170px;
     margin: 15px;
     font-size: 1.5em;
     font-family: "Press Start 2P", cursive;
     margin: 70px;
-    border-left: 20px solid $l-border;
-    border-top: 7.5px solid $t-border;
-    border-right: 20px solid $r-border;
-    border-bottom: 60px solid $b-border;
+    border-bottom: 20px solid $b-border;
     text-align: center;
+    color: black;
   }
 }
 
 button {
   position: relative;
-  left: 0;
-  top: -10px;
+  left: 900px;
+  top: -400px;
   display: inline-block;
   cursor: pointer;
   outline: none;
