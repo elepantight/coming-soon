@@ -1,7 +1,7 @@
-import React from 'react';
-import emailjs from 'emailjs-com'
+import React from "react";
+import emailjs from "emailjs-com";
 
-
+import LOGO from "./images/text_black.png";
 import "./scss/styles.scss";
 export default function ContactUs() {
   function sendEmail(e) {
@@ -28,11 +28,8 @@ export default function ContactUs() {
   return (
     <>
       <div className="text-header">
-        <section className="icon-list">
-          <div>
-
-          </div>
-        </section>
+        <img className="logo-img" src={LOGO} alt="img" />
+ 
       </div>
       <div className="container">
         <div className="row">
@@ -49,42 +46,39 @@ export default function ContactUs() {
               </p>
             </div>
           </section>
-  
         </div>
       </div>
       <div className="subscription-form" onSubmit={sendEmail}>
-          <div className="input-container">
-            <input
-              type="email"
-              name="email"
-              className="input"
-              placeholder="Email"
-            />
-              <button type="submit" className="btn">
-                Submit
-              </button>
-            </div>
-          </div>
-          <div class="fire">
-   <div class="flames">
-      <div class="flame"></div>
-      <div class="flame"></div>
-      <div class="flame"></div>
-      <div class="flame"></div>
-   </div>
-   
-   
-</div>
-<div class="fire">
-   <div class="flames">
-      <div class="flame"></div>
-      <div class="flame"></div>
-      <div class="flame"></div>
-      <div class="flame"></div>
-   </div>
-   
-   
-</div>
+        <div className="input-container">
+          <input
+            type="email"
+            name="email"
+            className="input"
+            placeholder="Email"
+          />
+          <button type="submit" className="btn">
+            Submit
+          </button>
+        </div>
+      </div>
+      <div class="fire-1">
+        <div class="flames-1">
+          <div class="flame-1"></div>
+          <div class="flame-1"></div>
+          <div class="flame-1"></div>
+          <div class="flame-1"></div>
+        </div>
+        <div class="logs-1"></div>
+      </div>
+      <div class="fire-2">
+        <div class="flames-2">
+          <div class="flame-2"></div>
+          <div class="flame-2"></div>
+          <div class="flame-2"></div>
+          <div class="flame-2"></div>
+        </div>
+        <div class="logs-2"></div>
+      </div>
     </>
   );
 }
