@@ -1,29 +1,16 @@
 import React from "react";
-import emailjs from "emailjs-com";
+
+
+
+import ContactUs from './components/contact';
 
 import LOGO from "./images/text_black.png";
 import "./scss/styles.scss";
-export default function ContactUs() {
-  function sendEmail(e) {
-    e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "gmail",
-        "template_5n8oapd",
-        e.target,
-        "user_nzRUlAOVwi3RNtg0sXepQ"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  }
+
+
+
+function App() {
 
   return (
     <>
@@ -48,37 +35,27 @@ export default function ContactUs() {
           </section>
         </div>
       </div>
-      <div className="subscription-form" onSubmit={sendEmail}>
-        <div className="input-container">
-          <input
-            type="email"
-            name="email"
-            className="input"
-            placeholder="Email"
-          />
-          <button type="submit" className="btn">
-            Submit
-          </button>
+<ContactUs />
+      <div className="fire-1">
+        <div className="flames-1">
+          <div className="flame-1"></div>
+          <div className="flame-1"></div>
+          <div className="flame-1"></div>
+          <div className="flame-1"></div>
         </div>
+        <div className="logs-1"></div>
       </div>
-      <div class="fire-1">
-        <div class="flames-1">
-          <div class="flame-1"></div>
-          <div class="flame-1"></div>
-          <div class="flame-1"></div>
-          <div class="flame-1"></div>
+      <div className="fire-2">
+        <div className="flames-2">
+          <div className="flame-2"></div>
+          <div className="flame-2"></div>
+          <div className="flame-2"></div>
+          <div className="flame-2"></div>
         </div>
-        <div class="logs-1"></div>
-      </div>
-      <div class="fire-2">
-        <div class="flames-2">
-          <div class="flame-2"></div>
-          <div class="flame-2"></div>
-          <div class="flame-2"></div>
-          <div class="flame-2"></div>
-        </div>
-        <div class="logs-2"></div>
+        <div className="logs-2"></div>
       </div>
     </>
   );
-}
+  }
+
+  export default App;

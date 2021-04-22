@@ -76,3 +76,22 @@ p {
   margin: 15px;
 }
 
+
+
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 50%;
+    position: relative;
+    top: 400px;
+    left: 100px;
+
+  }
+}
+@media only screen and (max-width: 375px){
+  .container-box-1{
+  width: 50%;
+  left: 10px;
+  top: 10px;
+
+}}
+
