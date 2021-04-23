@@ -35,6 +35,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Press Start 2P", cursive;
+  font-weight: 900;
+  letter-spacing: 5px;
 }
 
 .container-box-1 {
@@ -84,7 +86,6 @@ p {
     top: -400px;
   }
 }
-
 
 @media only screen and (max-width: 475px) {
   .container-box-2 {

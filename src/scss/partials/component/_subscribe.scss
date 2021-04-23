@@ -10,26 +10,21 @@ $pink-border: #1f1f1f;
 $pink-shadow: #5bbce4;
 
 
-.input-container {
-  position: relative;
-  margin-left: 240px;
-  top: -250px;
-
   input {
-    margin: 15px;
+position: relative;
+top: 200px;
+left: 250px;
     font-size: 1.5em;
     font-family: "Press Start 2P", cursive;
-    margin: 70px;
     border-bottom: 20px solid $b-border;
     text-align: center;
     color: black;
   }
-}
 
 button {
   position: relative;
   left: 900px;
-  top: -400px;
+  top: 125px;
   display: inline-block;
   cursor: pointer;
   outline: none;
@@ -82,7 +77,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 475px) {
   .input-container {
     position: relative;
     left: -250px;
@@ -94,7 +89,7 @@ button {
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 475px) {
   button {
     position: relative;
     left: 150px;
