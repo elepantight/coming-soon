@@ -11,9 +11,10 @@ $pink-shadow: #5bbce4;
 
 
   input {
+    width: 800px;
 position: relative;
-top: 200px;
-left: 250px;
+top: 100px;
+left: 200px;
     font-size: 1.5em;
     font-family: "Press Start 2P", cursive;
     border-bottom: 20px solid $b-border;
@@ -23,7 +24,7 @@ left: 250px;
 
 button {
   position: relative;
-  left: 900px;
+  left: 530px;
   top: 125px;
   display: inline-block;
   cursor: pointer;
