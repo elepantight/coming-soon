@@ -3,6 +3,7 @@ import React from "react";
 import emailjs from "emailjs-com";
 
 import LOGO from "./images/Mlogo.png";
+import INSTA from './images/instagram.png';
 import "./scss/styles.scss";
 
 function App() {
@@ -30,6 +31,18 @@ function App() {
     <>
       <div className="text-header">
         <img className="logo-img" src={LOGO} alt="img" />
+
+        <a href="https://www.instagram.com/wavyoven/"
+                target="_blank"
+                rel="noopener noreferrer" 
+                className="logo-instagram">
+        <img
+                
+                className="card-img"
+                src={INSTA}
+                alt="img"
+              />
+              </a>
       </div>
       <div className="container">
         <div className="row">
@@ -85,6 +98,7 @@ function App() {
         </div>
         <div className="logs-2"></div>
       </div>
+
     </>
   );
 }
