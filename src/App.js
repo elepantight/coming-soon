@@ -2,7 +2,7 @@ import React from "react";
 
 import emailjs from "emailjs-com";
 
-import LOGO from "./images/Mlogo.png";
+import LOGO from "./images/text_black.png";
 import INSTA from './images/instagram.png';
 import "./scss/styles.scss";
 
