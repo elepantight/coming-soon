@@ -116,3 +116,11 @@
     left: calc(50% - 250px);
     animation-delay: 1.8s;
 }
+
+
+@media only screen and (max-width: 475px) {
+ .night{
+     display: none;
+ }
+  }
+  
