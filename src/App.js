@@ -30,6 +30,13 @@ function App() {
   return (
     <>
       <div className="text-header">
+      <div class="night">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
         <img className="logo-img" src={LOGO} alt="img" />
 
         <a href="https://www.instagram.com/wavyoven/"
@@ -74,7 +81,7 @@ function App() {
           <section className="container-box-2">
             <p>
               We're currently working on creating <br></br>our new website.
-              We'll be launching soon<br></br> subscribe to be notified{" "}
+              We'll be launching soon<br></br> Subscribe to be notified{" "}
             </p>
           </section>
         </div>
