@@ -59,7 +59,6 @@ function App() {
       <div className="container">
         <div className="row">
           <section className="container-box-1">
-
             <div className="box1">
               <p>Welcome to Metanoia</p>
             </div>

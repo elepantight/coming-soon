@@ -31,8 +31,8 @@ body {
 .info_text{
   position: absolute;
   top: 60px;
-  left: 130px;
-  font-family: 'Bangers', cursive; 
+  left: 90px;
+  font-family: 'Orbitron', sans-serif;
   z-index: 1;
 }
 
@@ -47,7 +47,20 @@ body {
   font-weight: 900;
   letter-spacing: 5px;
 }
-
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 50%;
+    position: relative;
+    left: 100px;
+  }
+}
+@media only screen and (max-width: 444px) {
+  .container {
+    width: 50%;
+    position: relative;
+    left: 100px;
+  }
+}
 .container-box-1 {
   width: 800px;
   height: 30px;
@@ -63,6 +76,21 @@ body {
     15px 15px 0px 0px #a1d8ff, 20px 20px 0px 0px #cae6ff,
     25px 25px 0px 0px #e1eeff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
+@media only screen and (max-width: 375px) {
+  .container-box-1 {
+    width: 300px;
+    height: 110px;
+    left: -10px;
+    top: 100px;
+  }
+  @media only screen and (max-width: 444px) {
+    .container-box-1 {
+      width: 300px;
+      height: 110px;
+      left: -15px;
+      top: 100px;
+    }
+  }
 .container-box-2 {
   background-color: white;
   -webkit-box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff,
@@ -81,7 +109,25 @@ p {
   margin: 15px;
 }
 
+@media only screen and (max-width: 375px) {
+  .container-box-2 {
+    width: 300px;
+    height: 470px;
+    left: -10px;
+    top: 50px;
+    text-indent: 50px;
+  }
+}
 
+@media only screen and (max-width: 444px) {
+  .container-box-2 {
+    width: 300px;
+    height: 470px;
+    left: 0;
+    top: 50px;
+    text-indent: 50px;
+  }
+}
 
 .logo-instagram{
 float: right;
@@ -89,31 +135,26 @@ margin-right: 50px;
   
   margin-top: 50px;
 }
-
-
-@media only screen and (max-width: 475px) {
-  .container {
-    width: 50%;
+@media only screen and (max-width: 375px) {
+  .logo-instagram {
     position: relative;
-    top: 400px;
-    left: 100px;
-  }
-}
-@media only screen and (max-width: 475px) {
-  .container-box-1 {
-    width: 300px;
-    height: 100px;
-    left: -10px;
-    top: -400px;
+    left: 10px;
+    top: -30px;
   }
 }
 
-@media only screen and (max-width: 475px) {
-  .container-box-2 {
-    width: 300px;
-    height: 430px;
-    left: -10px;
-    top: -350px;
-    text-indent: 50px;
+
+}
+
+
+
+@media only screen and (max-width: 444px) {
+  .logo-instagram {
+    position: relative;
+    left: 10px;
+    top: -30px;
   }
 }
+
+
+

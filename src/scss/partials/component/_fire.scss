@@ -13,7 +13,25 @@ $animationtime: 1.5s;
     transform: translate(-50%, -25%);
     height: 10vw;
     width: 10vw;
+    @media screen and (max-width: 375px) {
+      .flame-1 {
+       display: none;
+      }
+      .logs-1{
+    display: none;
+      
+      }
+    }
     .flames-1 {
+      @media screen and (max-width: 444px) {
+        .flame-1 {
+          display: none;
+        }
+        .logs-1{
+      display: none;
+        
+        }
+      }
       position: absolute;
       bottom: 40%;
       left: 50%;
@@ -48,6 +66,9 @@ $animationtime: 1.5s;
         }
       }
     }
+
+ 
+
     .logs-1 {
       position: absolute;
       bottom: 25%;
@@ -71,6 +92,13 @@ $animationtime: 1.5s;
         transform: translate(-50%, -50%) rotate(-20deg);
         background-color: $brownd;
       }
+    }
+  }
+  @media screen and (max-width: 444px) {
+ 
+    .logs-1{
+  display: none;
+    
     }
   }
   .fire-2 {
@@ -116,6 +144,31 @@ $animationtime: 1.5s;
        }
      }
    }
+   @media screen and (max-width: 375px) {
+    .fire-2,.flames-2 {
+      position: absolute;
+      top: -600px;
+    }
+    .logs-2{
+      position: absolute;
+      left: 10%;
+      top: -575px;
+    
+    }
+  }
+  @media screen and (max-width: 444px) {
+    .fire-2,.flames-2 {
+      position: absolute;
+      top: -530px;
+    }
+    .logs-2{
+      position: absolute;
+      left: 20%;
+      top: -500px;
+    
+    }
+  }
+
    .logs-2 {
      position: absolute;
      bottom: 25%;
@@ -141,6 +194,27 @@ $animationtime: 1.5s;
      }
    }
  }
+ @media screen and (max-width: 375px) {
+
+  .logs-2{
+    position: absolute;
+    left: 10%;
+    top: -575px;
+  
+  }
+}
+@media screen and (max-width: 444px) {
+  .fire-2,.flames-2 {
+    position: absolute;
+    top: -530px;
+  }
+  .logs-2{
+    position: absolute;
+    left: 20%;
+    top: -500px;
+  
+  }
+}
 @keyframes flameodd {
   0%,
   100% {
@@ -210,5 +284,18 @@ $animationtime: 1.5s;
   100% {
     right: 170%;
     bottom: 150%;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 444px) {
+  .container-box-2 {
+    width: 300px;
+    height: 470px;
+    left: -10px;
+    top: 50px;
+    text-indent: 50px;
   }
 }

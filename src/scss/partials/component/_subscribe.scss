@@ -33,6 +33,7 @@ button {
   text-decoration: none;
   font-size: inherit;
   font-family: "Press Start 2P", cursive;
+
   &.btn {
     font-weight: 600;
     color: $text;
@@ -78,22 +79,42 @@ button {
     }
   }
 }
+@media only screen and (max-width: 375px) {
+  button {
+    position: relative;
+    left: -100px;
+    top: 770px;
+    padding-top: 110px;
+  }
+}
 
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 444px) {
+  button {
+    position: relative;
+    left: 90px;
+    top: 770px;
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 444px) {
   .input-container {
     position: relative;
-    left: -210px;
-    top: 200px;
+    left: -100px;
+    top: 600px;
     input {
       width: 300px;
     }
   }
 }
 
-@media only screen and (max-width: 475px) {
-  button {
+@media only screen and (max-width: 444px) {
+  .input-container {
     position: relative;
-    left: 80px;
-    top: 320px;
+    left: -190px;
+    top: 600px;
+    input {
+      width: 300px;
+    }
   }
 }
+
