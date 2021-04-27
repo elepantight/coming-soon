@@ -28,7 +28,13 @@ body {
   }
 }
 
-
+.info_text{
+  position: absolute;
+  top: 60px;
+  left: 130px;
+  font-family: 'Bangers', cursive; 
+  z-index: 1;
+}
 
 .container {
   margin-top: 100px;
@@ -79,14 +85,12 @@ p {
 
 .logo-instagram{
 float: right;
-margin-right: 100px;
+margin-right: 50px;
   
   margin-top: 50px;
 }
 
-.card-img:hover{
-  transform: scale(1.5);
-}
+
 @media only screen and (max-width: 475px) {
   .container {
     width: 50%;

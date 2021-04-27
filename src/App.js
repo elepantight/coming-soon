@@ -1,4 +1,4 @@
-import React from "react";
+import React from  "react";
 
 import emailjs from "emailjs-com";
 
@@ -27,6 +27,10 @@ function App() {
       );
     e.target.reset();
   }
+
+
+
+  
   return (
     <>
       <div className="text-header">
@@ -38,6 +42,7 @@ function App() {
       <div class="star"></div>
     </div>
         <img className="logo-img" src={LOGO} alt="img" />
+        <h4 className="info_text">beyond thought</h4>
 
         <a href="https://www.instagram.com/wavyoven/"
                 target="_blank"
@@ -54,6 +59,7 @@ function App() {
       <div className="container">
         <div className="row">
           <section className="container-box-1">
+
             <div className="box1">
               <p>Welcome to Metanoia</p>
             </div>
