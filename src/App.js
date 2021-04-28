@@ -1,9 +1,9 @@
-import React from  "react";
+import React from "react";
 
 import emailjs from "emailjs-com";
 
 import LOGO from "./images/text_black.png";
-import INSTA from './images/instagram.png';
+import INSTA from "./images/instagram.png";
 import "./scss/styles.scss";
 
 function App() {
@@ -28,33 +28,27 @@ function App() {
     e.target.reset();
   }
 
-
-
-  
   return (
     <>
       <div className="text-header">
-      <div class="night">
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-    </div>
+        <div class="night">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
         <img className="logo-img" src={LOGO} alt="img" />
         <h4 className="info_text">beyond thought</h4>
 
-        <a href="https://www.instagram.com/wavyoven/"
-                target="_blank"
-                rel="noopener noreferrer" 
-                className="logo-instagram">
-        <img
-                
-                className="card-img"
-                src={INSTA}
-                alt="img"
-              />
-              </a>
+        <a
+          href="https://www.instagram.com/wavyoven/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="logo-instagram"
+        >
+          <img className="card-img" src={INSTA} alt="img" />
+        </a>
       </div>
       <div className="container">
         <div className="row">
@@ -64,25 +58,25 @@ function App() {
             </div>
           </section>
           <section>
-        <div className="contact-form" onSubmit={sendEmail}>
-          <form action="index.html">
-            <div className="input-container">
-              <input
-                type="email"
-                name="email"
-                className="input"
-                placeholder="Email"
-              />
-              <label htmlFor=""></label>
-              <span></span>
+            <div className="contact-form" onSubmit={sendEmail}>
+              <form action="index.html">
+                <div className="input-container">
+                  <input
+                    type="email"
+                    name="email"
+                    className="input"
+                    placeholder="Email"
+                  />
+                  <label htmlFor=""></label>
+                  <span></span>
+                </div>
+                <button type="submit" className="btn">
+                  <span className="label">Send</span>
+                  <span className="icon"></span>
+                </button>
+              </form>
             </div>
-            <button type="submit" className="btn">
-              <span className="label">Send</span>
-              <span className="icon"></span>
-            </button>
-          </form>
-        </div>
-      </section>
+          </section>
           <section className="container-box-2">
             <p>
               We're currently working on creating <br></br>our new website.
@@ -91,7 +85,7 @@ function App() {
           </section>
         </div>
       </div>
-     
+
       <div className="fire-1">
         <div className="flames-1">
           <div className="flame-1"></div>
@@ -110,7 +104,6 @@ function App() {
         </div>
         <div className="logs-2"></div>
       </div>
-
     </>
   );
 }
