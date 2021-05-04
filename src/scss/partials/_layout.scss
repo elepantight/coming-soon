@@ -69,6 +69,15 @@ body {
     25px 25px 0px 0px #e1eeff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
+@media only screen and (max-width: 444px) {
+  .container-box-1 {
+    width: 300px;
+    height: 120px;
+    left: 0;
+    top: 100px;
+    text-indent: 50px;
+  }
+}
   .container-box-2 {
     background-color: white;
     -webkit-box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff, 15px 15px 0px 0px #a1d8ff,
@@ -132,13 +141,5 @@ body {
     height: 110px;
     left: -110px;
     top: 100px;
-  }
-  @media only screen and (max-width: 444px) {
-    .container-box-1 {
-      width: 300px;
-      height: 110px;
-      left: -15px;
-      top: 100px;
-    }
   }
 }
